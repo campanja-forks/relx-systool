@@ -1,7 +1,9 @@
 PROJECT = $(shell basename $(shell pwd))
 
-.PHONY: clean distclean upgrade compile test dialyzer eunit ct xref
+.PHONY: clean distclean
 .PHONY: release
+
+default: release
 
 clean:
 	./rebar3 clean
